@@ -15,20 +15,7 @@ $temp = __DIR__ .'./temp/';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MS-DOS Games</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-    <style type="text/css">
-        .conBox {
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-            align-content: center;
-            height: 100%;
-            width: 100%;
-        }
-
-        .item {
-            margin: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="includes/style.css">
 </head>
 <body>
     <h1>MS-DOS Games</h1>
