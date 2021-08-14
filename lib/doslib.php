@@ -2,6 +2,22 @@
 
 global $path, $temp;
 
+function bootstrap() {
+    global $path;
+
+    $options = getOptions($path);
+    echo assembleForm($options, 'game', 20);
+
+    if (isset($_POST['game'])) {
+        unzipGame($_POST['game']);
+    }
+
+    if (isset($_POST['execute'])) {
+        $game = '\\temp\\' . $_POST['execute'];
+        exec(__DIR__.'./dosbox/DOSBox.exe '. $game);
+    }
+}
+
 function unzipGame($file) {
     global $temp, $path;
     
