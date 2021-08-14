@@ -1,4 +1,4 @@
-# DOSBOX Runner
+# DOS Runner
 
 ## Description
 
