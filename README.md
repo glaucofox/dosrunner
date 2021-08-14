@@ -8,7 +8,7 @@ Simple application to unzip DOS files to a temporary folder, show the available 
 
 ### 1. Path to Files
 
-Edit index.php to include the path to your DOS zipped files and temp directory where the files are going to be extracted (lines 5 and 6).
+Edit `index.php` to include the path to your DOS zipped files and temp directory where the files are going to be extracted (lines 5 and 6).
 ```
 $path = "A:/Games/MS-DOS";
 $temp = __DIR__ .'./temp/';
