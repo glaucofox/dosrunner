@@ -11,10 +11,10 @@ function bootstrap() {
     if (isset($_POST['game'])) {
         unzipGame($_POST['game']);
     }
-
+    
     if (isset($_POST['execute'])) {
-        $game = '\\temp\\' . $_POST['execute'];
-        exec(__DIR__.'./dosbox/DOSBox.exe '. $game);
+        $game = '..\\temp\\' . $_POST['execute'];
+        exec(__DIR__.'\\..\\dosbox\\DOSBox.exe '. $game);
     }
 }
 
