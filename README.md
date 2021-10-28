@@ -20,10 +20,21 @@ Install or move DOSBox executable to the `dosbox` folder in this directory.
 ### 3. Editting Config File
 
 Copy the dosbox configuration file provided in the `conf` folder or 
-edit `dosbox-*.conf` located on your `AppData\Local\DOSBox` folder:
+edit `dosbox-*.conf` located on your `home` folder:
 
+Windows:
 ```
 C:\Users\{username}\AppData\Local\DOSBox
+```
+
+Linux:
+```
+~/.dosbox/dosbox-xx conf
+```
+
+Mac OS:
+```
+~/Library/Preferences/DOSBox xx Preferences
 ```
 
 #### 3.1 Autoexec
