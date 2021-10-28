@@ -14,7 +14,8 @@ function bootstrap() {
     
     if (isset($_POST['execute'])) {
         $game = '..\\temp\\' . $_POST['execute'];
-        exec(__DIR__.'\\..\\dosbox\\DOSBox.exe '. $game);
+        $path = __DIR__.'\\..\\dosbox\\DOSBox.exe '. $game;
+        exec($path);
     }
 }
 
@@ -79,10 +80,13 @@ function recursiveRemove($dir) {
 function getOptions($path) {
     $diretorio = dir($path);
     $options = "";
+    $selected = "";
     while ($arquivo = $diretorio->read())
     {
-        $selected = ($arquivo === $_POST['game']) ?  ' selected' : '';
-        if (strlen($arquivo) > 4) {
+        if (isset($_POST['game']) && $_POST['game'] !== null) {
+            $selected = ($arquivo === $_POST['game']) ?  ' selected' : '';
+        }
+        if (isset($arquivo) && strlen($arquivo) > 4) {
             $options .= "<option value='$arquivo' $selected>$arquivo</option>";
         }
     }
