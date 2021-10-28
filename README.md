@@ -45,7 +45,7 @@ Add to autoexec section the command to mount d drive on the temp folder location
 [autoexec]
 # Lines in this section will be run at startup.
 # You can put your MOUNT lines here.
-mount d c:\msdos\temp\
+mount d c:\dosrunner\temp\
 d:
 ```
 
